@@ -1,6 +1,6 @@
-### Scheduled-Script-Launcher
+# Scheduled-Script-Launcher
 
-# Old Version
+### Old Version
 
 A simple Bash script that repeatedly checks the system clock and launches a specified executable at fixed time intervals.
 
@@ -74,7 +74,7 @@ while true
 
 This causes one CPU core to be heavily utilized.
 ________________
-# Modified Version
+### Modified Version
 
 A more efficient version would include a short sleep:
 
