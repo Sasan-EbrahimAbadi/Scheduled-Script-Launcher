@@ -8,10 +8,14 @@ A simple Bash script that repeatedly checks the system clock and launches a spec
 
 This script:
 
-Records the current Unix timestamp when it starts.
+1. Records the current Unix timestamp when it starts.
+
 2. Continuously monitors the current time.
+
 3. Executes a target program when the scheduled execution time is reached.
+
 4. Schedules the next execution time.
+
 5. Repeats indefinitely until it stops manually.
 
 _____________________________________
@@ -76,7 +80,7 @@ This causes one CPU core to be heavily utilized.
 ________________
 ## Modified Version
 
-A more efficient version would include a short sleep:
+A more efficient version could include a short sleep:
 
 sleep 1
 
