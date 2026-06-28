@@ -1,6 +1,7 @@
-# Scheduled-Script-Launcher
+### Scheduled-Script-Launcher
 
-Old Version
+# Old Version
+
 A simple Bash script that repeatedly checks the system clock and launches a specified executable at fixed time intervals.
 
 Overview
