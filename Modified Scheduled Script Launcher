@@ -1,0 +1,17 @@
+#!/bin/bash
+
+START=$(date +%s)
+echo $START
+while true
+  do
+    CURRENT=$(date +%s)
+
+    if (( CURRENT >= START ))
+      then
+        /home/Local_address/Filename
+        START=$((START + 180))
+        echo $START
+      fi
+
+      sleep 1
+    done
