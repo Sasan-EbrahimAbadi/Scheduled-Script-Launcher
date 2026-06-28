@@ -1,10 +1,10 @@
 # Scheduled-Script-Launcher
 
-### Old Version
+## Old Version
 
 A simple Bash script that repeatedly checks the system clock and launches a specified executable at fixed time intervals.
 
-Overview
+### Overview
 
 This script:
 
@@ -15,7 +15,7 @@ Records the current Unix timestamp when it starts.
 5. Repeats indefinitely until it stops manually.
 
 _____________________________________
-Initialization
+### Initialization
 
 START=$(date +%s)
 
@@ -25,7 +25,7 @@ Example:
 
 1750785600
 ____________________________________
-Infinite Loop
+### Infinite Loop
 
 while true
 do
@@ -34,7 +34,7 @@ done
 
 The script runs continuously until manually terminated.
 ______________________________________
-Time Check
+### Time Check
 
 ($(date +%s))-($START)
 
@@ -45,7 +45,7 @@ Scheduled execution timestamp (START)
 
 The target program is executed only when the difference is exactly zero.
 _____________________________________
-Program Execution
+### Program Execution
 
 '/home/local_address/Filename'
 
@@ -57,14 +57,14 @@ Make sure the file has execute permissions:
 
 chmod +x /home/local_address/Filename
 ___________________________________
-Rescheduling
+### Rescheduling
 
 START=$((START+180))
 
 Updates the next execution time to 180 seconds (3 minutes) after the previous scheduled time. You can change this time to any numbers based on your need.
 
 ___________________________________
-Limitations
+### Limitations
 
 High CPU Usage
 
@@ -74,7 +74,7 @@ while true
 
 This causes one CPU core to be heavily utilized.
 ________________
-### Modified Version
+## Modified Version
 
 A more efficient version would include a short sleep:
 
